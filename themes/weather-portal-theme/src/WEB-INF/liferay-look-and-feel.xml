@@ -21,6 +21,17 @@
 			<default-portlet-decorator>true</default-portlet-decorator>
 			<portlet-decorator-css-class>portlet-weather-decorator</portlet-decorator-css-class>
 		</portlet-decorator>
-
+		<layout-templates>
+			<custom>
+				<layout-template id="weather-home-layout" name="Weather Home Layout">
+					<template-path>layouttpl/custom/home-layouttpl/home.tpl</template-path>
+					<thumbnail-path>layouttpl/custom/home-layouttpl/home.png</thumbnail-path>
+				</layout-template>
+				<layout-template id="weather-info-layout" name="Weather Info Layout">
+					<template-path>layouttpl/custom/info-layouttpl/info.tpl</template-path>
+					<thumbnail-path>layouttpl/custom/info-layouttpl/info.png</thumbnail-path>
+				</layout-template>
+			</custom>
+		</layout-templates>
 	</theme>
 </look-and-feel>
