@@ -15,13 +15,12 @@ import javax.naming.ldap.LdapContext;
 @Component(
 	immediate = true,
 	property = {
-		// TODO enter required service properties
 	},
 	service = LDAPUserImporter.class
 )
-public class WeatherServiceUserimporter implements LDAPUserImporter{
+public class WeatherServiceUserImporter implements LDAPUserImporter{
 
-	private Log _log = LogFactoryUtil.getLog(WeatherServiceUserimporter.class);
+	private Log _log = LogFactoryUtil.getLog(WeatherServiceUserImporter.class);
 
 	@Override
 	public User importUser(long ldapServerId, long companyId, LdapContext ldapContext, Attributes attributes, String password) throws Exception {
